@@ -30,8 +30,6 @@ CModule::AddAutoloadClasses('nx_market', array(
 	'NXMarket\CNXFileManager'   => 'classes/СNXFileControler.php',
 	'NXMarket\CNXTailControler' => 'classes/СNXFileControler.php',
 
-
-
 	'NXMarket\NX_RegionList' => 'classes/CNXRegionList.php',	
 	'NXMarket\CNX_tails_creator' => 'classes/CNXTails.php',
 

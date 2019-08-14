@@ -1,0 +1,169 @@
+.nx-basket   {
+	background: rgba(255, 255, 255, 0.9);
+	position:fixed; 
+	right: 0px;
+	top: 22px;
+	z-index:1000;
+	padding: 15px 15px 15px 15px;
+
+}
+
+@media only screen and (min-width: 600px) { 
+
+	.nx-basket.nx-basket-fixed {
+		background: transparent;
+		color: #fff;
+		top: 0px;
+	}
+
+	.nx-basket.nx-basket-fixed a {
+		color: #f00;
+	}
+
+}
+
+.nx-basket .basket-title {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+.nx-basket-byer {position:relative; max-width: 100}
+
+.nx-basket-byer  .nx-order-control {
+	display:block; 
+	margin: auto; 
+	position: relative; 
+	width: 135px; 
+	border:0px solid #dbdbdb;
+}
+
+.nx-order-message, 
+.nx-basket-byer .nx-order-message {
+	position: absolute; top: -40px; right: 0;  z-index: 80;
+	width: 160px;
+	padding: 0.3em;
+    text-align: center;
+    background: none repeat scroll 0 0 #000;
+    color:#fff;
+    border: 1px solid #000;
+    cursor: pointer;    
+-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+   -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+   		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    	box-sizing: border-box;
+}
+
+.nx-order-message:before, .nx-basket-byer .nx-order-message:before {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 16px solid #000;
+    bottom: -16px;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 30px;
+    width: 0;
+    z-index: 83;
+}
+.nx-order-message:after, .nx-basket-byer .nx-order-message:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #333;
+    bottom: -21px;
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    right: 28px;
+    width: 0;
+    z-index: 81;
+}
+
+/*.nx-basket-byer  a.nx-to-basket {
+	padding-right: 40px; 
+	position: relative;
+}*/
+
+.nx-basket-byer  .nx-no-aviable,
+.nx-basket-byer  .nx-no-aviable:hover {
+	position: relative;
+	background: #666; 
+	white-space:nowrap;
+}
+
+.nx-basket-byer,
+.nx-basket-byer .nx-order-count-block {
+	max-width: 160px;
+	min-width: 160px;
+}
+
+.nx-basket-byer .nx-counters {
+	display:block; 
+	width:10px;  
+	position: absolute; 
+	top: 2px; 
+	bottom:2px; 
+	z-index: 18; 
+	left:0;
+	margin: 0 ; 
+}
+
+.nx-basket-byer  .nx-counter {
+	display:block; 
+	height:10px; width:10px;  
+	overflow: hidden; 
+	position:absolute; z-index:27; left:0;   
+	margin: 0;
+	cursor:pointer;  
+	text-indent:-1000px; 
+}
+
+.nx-basket-byer .nx-current-count  {
+	z-index: 200;
+}
+
+.nx-basket-byer .nx-current-full {
+	background: #a2110d; 
+	color: #fff;
+}
+
+
+
+.nx-fixed-panel .basket:before {display: none;}
+.nx-fixed-panel .basket-title:after {content: ":";}
+.nx-fixed-panel .basket  strong,
+.nx-fixed-panel .basket  span,
+.nx-fixed-panel .nx-basket-state,
+.nx-fixed-panel .basket .basket-title {
+	display: inline; 
+	vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 1000px) { 
+	.nx-basket {
+		top: 0px;
+		right: 30%;
+		padding: 10px 15px 10px 15px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	.nx-basket     {
+		background: #fff;
+		color: #000;
+		left: 0;
+		right: 0;
+		top: auto;
+		bottom: 0;
+		z-index:1000;
+		border-top: 1px solid #ccc;
+	}
+
+}
